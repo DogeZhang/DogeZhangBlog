@@ -1,0 +1,361 @@
+{
+    "name": "知识图谱",
+    "children": [
+        {
+            "name": "程序设计",
+            "children": [
+                {
+                    "name": "C/C++",
+                    "children": [
+                        {
+                            "name": "基础",
+                            "children": [
+                                {
+                                    "name": "指针"
+                                },
+                                {
+                                    "name": "作用域"
+                                },
+                                {
+                                    "name": "switch"
+                                },
+                                {
+                                    "name": "C++数据结构"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "类/对象",
+                            "children": [
+                                {
+                                    "name": "继承",
+                                    "children": [
+                                        
+                                    ]
+                                },
+                                {
+                                    "name": "重载",
+                                    "children": [
+                                        
+                                    ]
+                                },
+                                {
+                                    "name": "接口（封装）",
+                                    "children": [
+                                        
+                                    ]
+                                },
+                                {
+                                    "name": "多态",
+                                    "children": [
+                                        
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "异常",
+                            "children": [
+                                
+                            ]
+                        },
+                        {
+                            "name": "模板",
+                            "children": [
+                                
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Java",
+                    "children": [
+                        {
+                            "name": "开发环境配置",
+                            "children": [
+                                
+                            ]
+                        },
+                        {
+                            "name": "基础类",
+                            "children": [
+                                {
+                                    "name": "Number / Math"
+                                }, {
+                                    "name": "Character"
+                                }, {
+                                    "name": "Stream"
+                                }, {
+                                    "name": "File"
+                                }, {
+                                    "name": "IO"
+                                }, {
+                                    "name": "Scanner"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "正则",
+                            "children": [
+                                
+                            ]
+                        },
+                        {
+                            "name": "继承",
+                            "children": [
+                                
+                            ]
+                        },
+                        {
+                            "name": "封装",
+                            "children": [
+                                
+                            ]
+                        },
+                        {
+                            "name": "泛型",
+                            "children": [
+                                
+                            ]
+                        },
+                        {
+                            "name": "多线程",
+                            "children": [
+                                
+                            ]
+                        },
+                        {
+                            "name": "JDBC",
+                            "children": [
+                                
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Python",
+                    "children": [
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "数据结构",
+            "children": [
+                {
+                    "name": "线性表",
+                    "children": [
+                        {
+                            "name": "顺序表"
+                        }, {
+                            "name": "单链表"
+                        }, {
+                            "name": "上链表"
+                        }, {
+                            "name": "循环链表"
+                        }
+                    ]
+                }, {
+                    "name": "栈",
+                    "children": [
+                        {
+                            "name": "代码实现（C/C++）"
+                        }, {
+                            "name": "顺序栈"
+                        }, {
+                            "name": "链栈"
+                        }, {
+                            "name": "共享栈"
+                        }
+                    ]
+                }, {
+                    "name": "队列",
+                    "children": [
+                        {
+                            "name": "代码实现（C/C++）"
+                        }, {
+                            "name": "顺序队"
+                        }, {
+                            "name": "循环队"
+                        }, {
+                            "name": "链队"
+                        }
+                    ]
+                }, {
+                    "name": "树",
+                    "children": [
+                        {
+                            "name": "代码实现（C/C++）"
+                        }, {
+                            "name": "存储结构"
+                        }, {
+                            "name": "遍历"
+                        }, {
+                            "name": "二叉树、线索二叉树"
+                        }, {
+                            "name": "森林",
+                            "children": [
+                                {
+                                    "name": "二叉树 <----> 森林"
+                                }, {
+                                    "name": "遍历"
+                                }
+                            ]
+                        }, {
+                            "name": "应用",
+                            "children": [
+                                {
+                                    "name": "二叉排序树"
+                                }, {
+                                    "name": "平衡二叉树"
+                                }, {
+                                    "name": "哈夫曼"
+                                }
+                            ]
+                        }
+                    ]
+                }, {
+                    "name": "图",
+                    "children": [
+                        {
+                            "name": "存储",
+                            "children": [
+                                {
+                                    "name": "邻接矩阵"
+                                }, {
+                                    "name": "邻接表"
+                                }
+                            ]
+                        }, {
+                            "name": "遍历",
+                            "children": [
+                                {
+                                    "name": "深度优先（DFS）"
+                                }, {
+                                    "name": "广度优先（BFS）"
+                                }
+                            ]
+                        }, {
+                            "name": "最小生成树",
+                            "children": [
+                                {
+                                    "name": "Prim"
+                                }, {
+                                    "name": "Kruskal"
+                                }
+                            ]
+                        }, {
+                            "name": "最短路径",
+                            "children": [
+                                {
+                                    "name": "Dijkstra"
+                                }, {
+                                    "name": "Floyd"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "版本控制",
+            "children": [
+                {
+                    "name": "Subversion"
+                }, 
+                {
+                    "name": "Github",
+                    "children": [
+                        {
+                            "name": "Github"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "框架",
+            "children": [
+                {
+                    "name": "前端框架",
+                    "children": [
+                        {
+                            "name": "AngularJS"
+                        }, {
+                            "name": "Bootstrap"
+                        }, {
+                            "name": "Vue"
+                        }
+                    ]
+                }, {
+                    "name": "后端框架",
+                    "children": [
+                        {
+                            "name": "SpringBoot"
+                        }
+                    ]
+                }, {
+                    "name": "容器/分布式",
+                    "children": [
+                        {
+                            "name": "docker"
+                        }, {
+                            "name": "kubernetes"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "算法",
+            "children": [
+                {
+                    "name": "排序"
+                }, {
+                    "name": "最短路径"
+                }
+            ]
+        },
+        {
+            "name": "专业理论知识",
+            "children": [
+                {
+                    "name": "软件工程"
+                }, {
+                    "name": "数据库原理"
+                }, {
+                    "name": "现代操作系统"
+                }, {
+                    "name": "计算机网络"
+                }, {
+                    "name": "计算机系统结构"
+                }, {
+                    "name": "XML程序设计"
+                }, {
+                    "name": "linux操作系统与设计实践"
+                }, {
+                    "name": "面向对象设计方法（UML)"
+                }, {
+                    "name": "离散数学"
+                }, {
+                    "name": "高等数学"
+                }, {
+                    "name": "线性代数"
+                }
+            ]
+        }, 
+        {
+            "name": "辅助书籍",
+            "children": [
+                {
+                    "name": "辅助书籍",
+                    "children": [
+                        
+                    ]
+                }
+            ]
+        }
+    ]
+}

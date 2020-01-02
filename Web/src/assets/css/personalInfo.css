@@ -1,0 +1,127 @@
+/* 欢迎文字动画 */
+.intro-enter-active {
+    animation: intro-in .5s;
+}
+.intro-leave-active {
+    animation: intro-in .5s reverse;
+}
+@keyframes intro-in {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.intro-text{
+    margin-top: 20px;
+    font-size: 20px;
+}
+/* 名片头部动画 */
+.bus-enter{
+    opacity: 0;
+}
+.bus-enter-to{
+    opacity: 1;
+}
+.bus-enter-active{
+    transition: 1s
+}
+/* 文字顶部横线 */
+.line-top-enter{
+    transform: translateX(40px);
+    opacity: 0;
+}
+.line-top-enter-active{
+    transition: 0.5s;
+}
+/* 文字右部横线 */
+.line-right-enter{
+    transform: translateY(40px);
+    opacity: 0;
+}
+.line-right-enter-active{
+    transition: 0.5s;
+}
+/* 文字底部横线 */
+.line-bottom-enter{
+    transform: translateX(-40px);
+    opacity: 0;
+}
+.line-bottom-enter-active{
+    transition: 0.5s;
+}
+/* 文字左部横线 */
+.line-left-enter{
+    transform: translateY(-40px);
+    opacity: 0;
+}
+.line-left-enter-active{
+    transition: 0.5s;
+}
+/* 下方内容方块 */
+.info-box-enter{
+    transform: translateY(30px);
+    opacity: 0;
+}
+.info-box-enter-active{
+    transition: 0.3s;
+}
+
+.bus-card{
+    height: 200px;
+    background-color: #bdd4c7;
+}
+.card-name{
+    margin: 0;
+    text-align: center;
+    font-size: 35px;
+    color: #f0f7f3;
+}
+.name-h-t-line{
+    margin-left: 80px;
+    height: 4px;
+    width: 120px;
+    background-color: #f0f7f3;
+}
+.name-h-b-line{
+    position: absolute;
+    top: 118px;
+    margin-left: 80px;
+    height: 4px;
+    width: 120px;
+    background-color: #f0f7f3;
+}
+.name-v-l-line{
+    position: absolute;
+    height: 50px;
+    width: 4px;
+    left: 80px;
+    background-color: #f0f7f3;
+}
+.name-v-r-line{
+    position: absolute;
+    height: 50px;
+    width: 4px;
+    left: 196px;
+    background-color: #f0f7f3;
+}
+.infor-box{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #f0f7f3;
+    font-size: 13px;
+    font-weight: 600;
+}
+.icon-box{
+    float: left;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+}
