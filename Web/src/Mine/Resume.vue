@@ -124,6 +124,15 @@
                 <p class="timelist-text">软件工程专业</p>
               </el-col>
             </el-row>
+            <el-row class="timelist">
+              <el-col class="timelist-time">2019<br>-<br>2021</el-col>
+              <el-col :span="20" class="timelist-content">
+                <div class="timelist-point hidden-xs-only"></div>
+                <p class="timelist-title">研究生 福州大学/211</p>
+                <p class="timelist-text" style="font-style: italic">数学与计算机科学学院</p>
+                <p class="timelist-text">计算机技术/机器学习方向</p>
+              </el-col>
+            </el-row>
             <!-- 第六部分 实践经历 -->
             <div class="title" style="margin-bottom: 40px;">
               实践经历 EXPERIENCE
@@ -132,23 +141,20 @@
               <el-col class="timelist-time">2019.01<br>-<br>2010.03</el-col>
               <el-col :span="20" class="timelist-content">
                 <div class="timelist-point hidden-xs-only"></div>
-                <p class="timelist-title">个人主页</p>
+                <p class="timelist-title">个人主页（此网页）</p>
                 <p class="timelist-text" style="font-style: italic">开发者</p>
                 <div class="timelist-text">
                   <ol>
-                    <li>此项目为本人的个人情况展示网站，记录日常学习，所学技能以及简历的展示，独立开发。采用前后端分离技
-术，Vue+springboot。</li>
-                    <li>为更好的展示markdown文本，自行编写了一个独立组建，能够解析成html文件，并自己编写了css展示样式，能在不用的页面
-中引用。
+                    <li>此项目为本人的个人情况展示网站，记录日常学习，所学技能以及简历的展示，独立开发。采用前后端分离技术，Vue+springboot。从中学习动画、布局、webpack打包</li>
+                    <li>为更好的展示markdown文本，自行编写了一个独立组建，能够解析成html文件，并自己编写了css展示样式，能在不用的页面中引用。
                       <ul>
                         <li>支持静态markdown文件传入并解析</li>
                         <li>支持使用Ajax异步的方式从后端获取markdown文件并解析</li>
                         <li>自己设计的显示样式，支持h1-6、表格、代码段、行内代码、引用等常用markdown的样式。</li>
                       </ul>
                     </li>
-                    <li>兼容移动设备和PC端。</li>
+                    <li>页面自适应移动设备和PC端。</li>
                     <li>项目地址：<a href="https://github.com/DogeZhang/myBlog">https://github.com/DogeZhang/myBlog</a></li>
-                    <li>浏览地址：<a href="https://dogezhang.github.io/myBlog/">https://dogezhang.github.io/myBlog/</a></li>
                   </ol>
                 </div>
               </el-col>

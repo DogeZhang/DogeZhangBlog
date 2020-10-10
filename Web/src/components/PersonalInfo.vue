@@ -49,14 +49,14 @@
         <div v-if="showInfoBox2" class="infor-box" style="background-color: #ebaa4a">
           <div class="icon-box">
             <img src="./../assets/svg/book.svg" width="22px" height="22px" alt="专业："/>
-          </div>软件工程
+          </div>软件工程/机器学习
         </div>
       </transition>
       <transition name="info-box">
         <div v-if="showInfoBox3" class="infor-box" style="background-color: #eb6a2d">
           <div class="icon-box">
             <img src="./../assets/svg/thumb-up.svg" width="22px" height="22px" alt="技能："/>
-          </div>Java / C++ / Web
+          </div>Java / C++ / Web / 机器学习
         </div>
       </transition>
       <transition name="info-box">
@@ -123,22 +123,25 @@ export default {
   methods: {
     animationen () {
       var t = this
-      this.time1 = setTimeout(t._show1, 500)
-      this.time2 = setTimeout(t._show2, 700)
-      this.time3 = setTimeout(t._show3, 900)
-      this.time4 = setTimeout(t._show4, 1700)
-      this.time5 = setTimeout(t._show4, 2800)
-      this.time6 = setTimeout(t._show3, 2900)
-      this.time7 = setTimeout(t._show2, 3000)
-      this.time8 = setTimeout(t._show1, 3100)
-      this.time9 = setTimeout(t._showBus, 3500)
-      this.time10 = setTimeout(t._showName, 4000)
-      this.time11 = setTimeout(t._showInfoBox1, 4300)
-      this.time12 = setTimeout(t._showInfoBox2, 4500)
-      this.time13 = setTimeout(t._showInfoBox3, 4700)
-      this.time14 = setTimeout(t._showInfoBox4, 4900)
-      this.time15 = setTimeout(t._showInfoBox5, 5100)
-      this.time16 = setTimeout(t._showInfoBox6, 5300)
+      var TextStart = 500
+      var TextEnd = 1700
+      var PersonalStart = 2200
+      this.time1 = setTimeout(t._show1, TextStart)
+      this.time2 = setTimeout(t._show2, TextStart + 50)
+      this.time3 = setTimeout(t._show3, TextStart + 100)
+      this.time4 = setTimeout(t._show4, TextStart + 200)
+      this.time5 = setTimeout(t._show4, TextEnd)
+      this.time6 = setTimeout(t._show3, TextEnd + 30)
+      this.time7 = setTimeout(t._show2, TextEnd + 80)
+      this.time8 = setTimeout(t._show1, TextEnd + 130)
+      this.time9 = setTimeout(t._showBus, PersonalStart)
+      this.time10 = setTimeout(t._showName, PersonalStart + 200)
+      this.time11 = setTimeout(t._showInfoBox1, PersonalStart + 400)
+      this.time12 = setTimeout(t._showInfoBox2, PersonalStart + 650)
+      this.time13 = setTimeout(t._showInfoBox3, PersonalStart + 770)
+      this.time14 = setTimeout(t._showInfoBox4, PersonalStart + 870)
+      this.time15 = setTimeout(t._showInfoBox5, PersonalStart + 970)
+      this.time16 = setTimeout(t._showInfoBox6, PersonalStart + 1020)
     },
     _show1 () {
       this.show1 = !this.show1
