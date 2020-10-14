@@ -10,17 +10,17 @@
 
 <script>
 import axios from 'axios'
-import GithubPages from './posts/GithubPages.md'
-import Docker入门 from './posts/Docker 入门.md'
-import AngularJS基础内容 from './posts/AngularJS 基础内容.md'
-import AngularJS自定义指令 from './posts/AngularJS 自定义指令.md'
-import idea导出war包并部署Ubuntu服务器 from './posts/idea导出war包并部署Ubuntu服务器.md'
-import Python3底层知识 from './posts/Python3 底层知识.md'
-import Python3运算符 from './posts/Python3 运算符.md'
-import python3基础语法 from './posts/python3基础语法.md'
-import Ubuntu服务器搭建Mysql并远程连接 from './posts/Ubuntu 服务器搭建Mysql并远程连接.md'
-import 官网下载Chrome离线包 from './posts/官网下载Chrome离线包.md'
-import Vuejs监听参数 from './posts/Vue.js 监听参数.md'
+import GithubPages from './Posts/GithubPages.md'
+import Docker入门 from './Posts/Docker 入门.md'
+import AngularJS基础内容 from './Posts/AngularJS 基础内容.md'
+import AngularJS自定义指令 from './Posts/AngularJS 自定义指令.md'
+import idea导出war包并部署Ubuntu服务器 from './Posts/idea导出war包并部署Ubuntu服务器.md'
+import Python3底层知识 from './Posts/Python3 底层知识.md'
+import Python3运算符 from './Posts/Python3 运算符.md'
+import python3基础语法 from './Posts/python3基础语法.md'
+import Ubuntu服务器搭建Mysql并远程连接 from './Posts/Ubuntu 服务器搭建Mysql并远程连接.md'
+import 官网下载Chrome离线包 from './Posts/官网下载Chrome离线包.md'
+import Vuejs监听参数 from './Posts/Vue.js 监听参数.md'
 var marked = require('marked')
 export default {
   name: 'MyBlogs',
