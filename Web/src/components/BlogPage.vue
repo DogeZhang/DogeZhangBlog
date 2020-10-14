@@ -6,14 +6,14 @@
           <transition name="el-zoom-in-top">
             <el-row v-if="show">
               <!-- 左部内容 -->
-              <el-col :lg="7" :md="9" style="background-color: white;">
+              <el-col :lg="7" :md="9" style="">
                 <div style="float: left;">
                   <img style="cursor: pointer" @click="showFooter = !showFooter" class="header-img" src="./../assets/images/touxiang.jpg" alt="头像">
                 </div>
                 <div class="header-name" @click="goResume()">zhangyizhuo</div>
                 <transition name="info-button">
                   <div v-if="showInfoButton" class="header-info">
-                    <span style="color: black;cursor: pointer;"><i @click="showInfo()" id="show_info" class="el-icon-info"></i></span>
+                    <span style="color: black; cursor: pointer;"><i @click="showInfo()" id="show_info" class="el-icon-info"></i></span>
                   </div>
                 </transition>
                 <transition name="el-zoom-in-top">
@@ -21,7 +21,7 @@
                 </transition>
                 <el-button class="hidden-sm-and-up" style="position: fixed; right: 10px; top: 10px;" size="small" icon="el-icon-menu" @click="showMenu = !showMenu"></el-button>
               </el-col>
-              <div style="position: fixed;top: 50px; left: 0; right: 0; background-color: black;">
+              <div style="position: fixed;top: 50px; left: 0; right: 0;">
                 <el-collapse-transition>
                   <div v-show="showMenu">
                     <el-row type="flex" justify="end">
@@ -62,7 +62,7 @@
               <el-col :lg="17" :md="15" class="hidden-xs-only" >
                 <el-row type="flex" justify="end">
                   <el-col style="text-align: center" :lg="3" :md="3" :sm="4" :xs="6">
-                    <span @click="goMain" class="el-dropdown-link">
+                    <span style="color: black" @click="goMain" class="el-dropdown-link">
                       主页
                     </span>
                   </el-col>
@@ -109,7 +109,7 @@
         <el-footer height="40px" class="main-footer hidden-sm-and-down">
           <transition name="el-zoom-in-bottom">
             <el-row type="flex" justify="center" v-if="showFooter">
-              <el-col :lg="18" :md="18" :sm="24" :xs="24">
+              <el-col :lg="24" :md="24" :sm="24" :xs="24">
                 <div class="footer-container">
                   <div style="background-color: #bdd4c7" class="footer-left"></div>
                   <div style="background-color: #e1d28f" class="footer-left"></div>

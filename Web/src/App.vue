@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="fullscreen_post_bg"></div>
+    <!-- <div class="fullscreen_post_bg"></div> -->
     <router-view/>
   </div>
 </template>

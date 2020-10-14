@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/components/Home'
+// import Home from '@/components/Home'
 import BlogPage from '@/components/BlogPage'
 import personalInfo from '@/components/PersonalInfo'
 import Aside from '@/components/Aside'
@@ -10,15 +10,21 @@ import AckTree from '@/Mine/AckTree'
 import MyBlogs from '@/Blogs/MyBlogs'
 import Menu from '@/Blogs/Menu'
 import MenuTest from '@/Blogs/MenuTest'
+import MainPage from '@/components/MainPage'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    // {
+    //   path: '/',
+    //   name: 'Home',
+    //   component: Home
+    // },
     {
       path: '/',
-      name: 'Home',
-      component: Home
+      name: 'MainPage',
+      component: MainPage
     },
     {
       path: '/blogPage',

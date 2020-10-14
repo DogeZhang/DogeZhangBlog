@@ -1,0 +1,61 @@
+.block_one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(24, 169, 212);
+}
+
+.block_two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(14, 150, 155);
+}
+.textpain {
+    height: 200px;
+    width: 200px;
+    background-color: antiquewhite;
+}
+
+.textpain-enter{
+    transform: translateX(-30px);
+    opacity: 0;
+}
+.textpain-enter-active{
+    transition: 0.3s;
+}
+.textpain-leave-to {
+    transform: translateY(-30px);
+    opacity: 0;
+}
+.textpain-leave-active {
+    transition: 0.2s;
+}
+.test {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0px;
+    opacity: 0.5;
+    background-color: white;
+}
+.test-enter{
+    transform: translateX(160px);
+    opacity: 0;
+}
+.test-enter-active{
+    transition: 0.3s;
+}
+.test-leave-to {
+    transform: translateX(160px);
+    opacity: 0;
+}
+.test-leave-active {
+    transition: 0.2s;
+    
+}
