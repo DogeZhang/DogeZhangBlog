@@ -1,17 +1,28 @@
 <template>
   <div>
-    <div class="block_one">
-      <pre>{{msg}}</pre>
-      <div style="height: 200px"></div>
-      <transition name="textpain">
-        <div v-if="showTextpain" class="textpain"></div>
-      </transition>
-      <div style="opacity: 0.5; background: white"> sdfsdfksjdhfkjshdf</div>
-      <div @click="show()" style="position: fixed; height: 25px; width: 25px; top: 200px; right: 0; background-color: yellow; z-index: 200;"></div>
-      <transition name="test">
-        <div v-if="testShow" class="test">sdfsdf</div>
-      </transition>
-    </div>
+    <div @click="movement()" style="height: 100px; width: 100px; background-color: black;"></div>
+    <!-- 宽屏设备展示 -->
+    <el-row class="hidden-md-and-down" style="margin-top: 300px;">
+      <div style="position: absolute; left: 10%">
+        <transition name="textpain">
+          <div v-if="showTextpain">A</div>
+        </transition>
+      </div>
+      <div >
+        <div v-bind:class="[isMove ? 'movement' : 'movement-reverse']" style="position: absolute; left: 40%">
+          <transition name="textpain" id="sss">
+            <div v-if="showTextpain">B</div>
+          </transition>
+        </div>
+      </div>
+      <div style="position: absolute; left: 70%">
+        <transition name="textpain">
+          <div v-if="showTextpain">C</div>
+        </transition>
+      </div>
+    </el-row>
+    <!-- 小屏设备展示 -->
+    <el-row class="hidden-lg-and-up">md, sm, xs</el-row>
   </div>
 </template>
 
@@ -30,14 +41,16 @@ export default {
       msg: 'Welcome to My World !',
       startX: 0,
       startY: 0,
-      showTextpain: false,
-      testShow: false
+      showTextpain: true,
+      testShow: true,
+      isMove: true,
+      movementsytle: {}
     }
   },
   methods: {
-    show () {
-      this.testShow = !this.testShow
-      console.log('test')
+    movement () {
+      this.isMove = !this.isMove
+      console.log('movement')
     },
     handleScroll: function (event) {
       switch (event.type) {
@@ -62,8 +75,10 @@ export default {
           var distanceY = this.startY - endY
           if (Math.abs(distanceX) > Math.abs(distanceY) && distanceX > 0) {
             // this.msg = '往右滑动'
+            this.movementShow = false
           } else if (Math.abs(distanceX) > Math.abs(distanceY) && distanceX < 0) {
             // this.msg = '往左滑动'
+            this.movementShow = true
           } else if (Math.abs(distanceY) > Math.abs(distanceX) && distanceY > 0) {
             // this.msg = '往上滑动'
             this.showTextpain = false
@@ -75,7 +90,7 @@ export default {
           }
           break
       }
-      console.log(event)
+      // console.log(event)
       // var str = ''
       // for (var item in event) {
       //   str += item + ':' + event[item] + '\n'
