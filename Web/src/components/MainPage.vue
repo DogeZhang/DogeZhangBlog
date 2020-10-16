@@ -1,19 +1,39 @@
 <template>
   <div>
-    <div @click="movement()" style="height: 100px; width: 100px; background-color: black;"></div>
+    <div @click="movementRight()" class="click-panel">right</div>
+    <div @click="movementLeft()" class="click-panel">left</div>
+    <div @click="setOne()" class="click-panel">one</div>
+    <div @click="setTwo()" class="click-panel">two</div>
+    <div @click="setThree()" class="click-panel">three</div>
     <!-- 宽屏设备展示 -->
-    <el-row class="hidden-md-and-down" style="margin-top: 300px;">
+    <el-row class="hidden-md-and-down main-container">
       <div style="position: absolute; left: 10%">
         <transition name="textpain">
-          <div v-if="showTextpain">A</div>
+          <div v-if="showTextpain === 'one'" style="position: absolute">
+            <p v-bind:class="movement" style="position: relative; left: 0%; font-size: 50px;">Document</p>
+            <p v-bind:class="movement" style="position: relative; left: 0%; font-size: 50px;">To do</p>
+            <p v-bind:class="movement" style="position: relative; left: 0%; font-size: 50px;">Continue</p>
+          </div>
+        </transition>
+        <transition name="textpain">
+          <div v-if="showTextpain === 'two'" style="position: absolute">
+            <p v-bind:class="movement" style="position: relative; left: 0%; font-size: 50px;">Document2</p>
+            <p v-bind:class="movement" style="position: relative; left: 0%; font-size: 50px;">To do2</p>
+            <p v-bind:class="movement" style="position: relative; left: 0%; font-size: 50px;">Continue2</p>
+          </div>
+        </transition>
+        <transition name="textpain">
+          <div v-if="showTextpain === 'three'" style="position: absolute">
+            <p v-bind:class="movement" style="position: relative; left: 0%; font-size: 50px;">Document3</p>
+            <p v-bind:class="movement" style="position: relative; left: 0%; font-size: 50px;">To do3</p>
+            <p v-bind:class="movement" style="position: relative; left: 0%; font-size: 50px;">Continue3</p>
+          </div>
         </transition>
       </div>
-      <div >
-        <div v-bind:class="[isMove ? 'movement' : 'movement-reverse']" style="position: absolute; left: 40%">
-          <transition name="textpain" id="sss">
-            <div v-if="showTextpain">B</div>
-          </transition>
-        </div>
+      <div style="position: absolute; left: 40%">
+        <transition name="textpain">
+          <div v-if="showTextpain">B</div>
+        </transition>
       </div>
       <div style="position: absolute; left: 70%">
         <transition name="textpain">
@@ -41,16 +61,30 @@ export default {
       msg: 'Welcome to My World !',
       startX: 0,
       startY: 0,
-      showTextpain: true,
+      showTextpain: 'one',
       testShow: true,
-      isMove: true,
-      movementsytle: {}
+      movement: [],
+      movementsytle: {},
+      textpain: ['one', 'two', 'three']
     }
   },
   methods: {
-    movement () {
-      this.isMove = !this.isMove
-      console.log('movement')
+    movementRight () {
+      this.movement = ['movement']
+      console.log('movementRight')
+    },
+    movementLeft () {
+      this.movement = ['movement-reverse']
+      console.log('movementLeft')
+    },
+    setOne () {
+      this.showTextpain = this.textpain[0]
+    },
+    setTwo () {
+      this.showTextpain = this.textpain[1]
+    },
+    setThree () {
+      this.showTextpain = this.textpain[2]
     },
     handleScroll: function (event) {
       switch (event.type) {

@@ -1,39 +1,29 @@
-.block_one {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(24, 169, 212);
+.click-panel {
+    position: relative;
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+    top: 20px;
+    right: 20px;
+    background-color: yellow;
 }
 
-.block_two {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(14, 150, 155);
+.main-container {
+    padding-top: 20px;
 }
-.textpain {
-    position: absolute;
-    top: 300px;
-    left: 20px;
-}
-
 .textpain-enter{
-    transform: translateX(-30px);
+    transform: translateX(300px);
     opacity: 0;
 }
 .textpain-enter-active{
-    transition: 0.3s;
+    transition: 2s;
 }
 .textpain-leave-to {
-    transform: translateY(-30px);
+    transform: translateX(-300px);
     opacity: 0;
 }
 .textpain-leave-active {
-    transition: 0.2s;
+    transition: 2s;
 }
 
 .movement {
@@ -41,23 +31,43 @@
     animation-fill-mode: both;
 }
 .movement-reverse {
+    animation: movereverse 1s;
     animation-fill-mode: both;
-    animation: moveReverse 1s;
+}
+.movement2 {
+    animation: move 1s;
+    animation-fill-mode: both;
+    animation-delay: .1s;
+}
+.movement2-reverse {
+    animation: movereverse 1s;
+    animation-fill-mode: both;
+    animation-delay: .1s;
+}
+.movement3 {
+    animation: move 1s;
+    animation-fill-mode: both;
+    animation-delay: .2s;
+}
+.movement3-reverse {
+    animation: movereverse 1s;
+    animation-fill-mode: both;
+    animation-delay: .2s;
 }
 
 @keyframes move {
     0% {
-        left: 40%;
+        left: 0%;
     }
     100% {
-        left: 20%;
+        left: 40%;
     }
 }
-@keyframes moveReverse {
+@keyframes movereverse {
     0% {
-        left: 20%;
+        left: 40%;
     }
     100% {
-        left: 40%;
+        left: 0%;
     }
 }
